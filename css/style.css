@@ -24,6 +24,12 @@ body {
     background: #eee;
 }
 
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .weather__main {
     border-radius: 1rem;
     display: grid;
