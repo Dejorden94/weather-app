@@ -25,14 +25,32 @@ body {
 }
 
 .weather__main {
+    border-radius: 1rem;
     display: grid;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(10, 1fr);
     width: 90vw;
     height: 90vh;
     background: var(--background-color);
+    gap: 1rem;
 }
 
 .weather__info {
+    border-radius: 1rem;
     background: var(--background-info);
+}
+
+.weather__info:first-of-type {
+    grid-row: 1/6;
+    grid-column: 1/5;
+}
+
+.weather__info:nth-of-type(2) {
+    grid-row: 1/6;
+    grid-column: 5/11;
+}
+
+.weather__info:nth-of-type(3) {
+    grid-row: 6/11;
+    grid-column: 1/11;
 }
