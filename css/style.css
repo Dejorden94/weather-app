@@ -10,6 +10,22 @@ html {
     font-size: 62.5%;
 }
 
+:root {
+    --background-color: #6499E9;
+    --background-info: #9EDDFF;
+}
+
 body {
     font-size: 2rem;
+    background: #eee;
+}
+
+.weather__main {
+    width: 100vw;
+    height: 100vh;
+    background: var(--background-color);
+}
+
+.weather__info {
+    background: var(--background-info);
 }
