@@ -5,6 +5,9 @@ fetch("http://api.weatherapi.com/v1/current.json?key=a6e57a8225de486bacd15363623
     return data;
 });
 
-const setData = (data) => {
+let place = document.getElementById("js--weather-place");
 
+const setData = (data) => {
+    console.log(place);
+    place.innerText = data.location.name;
 }
